@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | AllState Permit Services</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .page-hero {
+      position: relative;
+      height: 52vh;
+      min-height: 400px;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 48px 64px;
+      overflow: hidden;
+    }
+    .page-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1600&q=80');
+      background-size: cover;
+      background-position: center 30%;
+    }
+    .page-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,27,42,0.95) 0%, rgba(13,27,42,0.4) 100%);
+    }
+    .page-hero-content { position: relative; z-index: 2; }
+
+    .about-body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 100px 40px;
+    }
+    .timeline {
+      margin-top: 80px;
+      border-left: 2px solid rgba(201,168,76,0.3);
+      padding-left: 40px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 56px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -49px;
+      top: 8px;
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--gold);
+      background: var(--navy);
+    }
+    .timeline-year {
+      font-family: var(--font-label);
+      font-size: 0.68rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .timeline-item h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" class="scrolled">
+    <a href="../index.html" class="nav-logo">
+      <span class="nav-logo-mark">APS</span>
+      <div class="nav-logo-divider"></div>
+      <span class="nav-logo-text">AllState Permit Services</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="about.html" class="active">About Us</a>
+        <ul class="nav-dropdown">
+          <li><a href="about.html">Company History</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="services.html">Services</a>
+        <ul class="nav-dropdown">
+          <li><a href="seismic.html">Seismic Permitting</a></li>
+          <li><a href="row.html">Right of Way Acquisition</a></li>
+          <li><a href="gis.html">GIS Services</a></li>
+          <li><a href="title.html">Title Curative</a></li>
+          <li><a href="landowner.html">Landowner Information</a></li>
+        </ul>
+      </li>
+      <li><a href="careers.html">Join Our Team</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="label" style="margin-bottom:12px;">Our Story</p>
+      <h1 style="font-size:clamp(2.5rem,6vw,5rem);">Four Decades<br/>of <em>Proven</em> Expertise</h1>
+    </div>
+  </section>
+
+  <div class="about-body">
+    <div class="reveal">
+      <div class="gold-rule"></div>
+      <p class="label">Company History</p>
+      <h2 style="margin-bottom:28px;">Built From the Field Up</h2>
+      <p style="font-size:1.2rem;color:var(--white);line-height:1.8;margin-bottom:20px;">AllState Permit Services was founded in 1980 with a simple but unwavering mission: provide the oil and gas industry with permit acquisition services that are faster, more thorough, and more accountable than anything else available.</p>
+      <p>That commitment hasn't changed in 45 years. What has changed is our reach. From our early roots in the Western United States, APS has grown into a national operation with proven results across 27 states — navigating federal agencies, tribal lands, municipalities, wetlands, and everything in between.</p>
+      <p style="margin-top:16px;">Our growth has always been organic, driven by client relationships and project referrals. When a seismic crew doesn't get delayed because permits were already secured, they remember who made that happen. That's been our competitive advantage since day one.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-year">1980</div>
+        <h3>Founded</h3>
+        <p>AllState Permit Services is established to serve the oil and gas industry's growing demand for professional, accountable permit acquisition in the field.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">Late 1980s – 1990s</div>
+        <h3>Expanding the Footprint</h3>
+        <p>APS expands operations across the southern and central United States, developing deep expertise in Texas — eventually completing work in 128 individual counties within the state alone.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2000s</div>
+        <h3>GIS Integration</h3>
+        <p>Recognizing the transformative power of geographic information systems for permitting work, APS builds an in-house GIS team capable of delivering comprehensive surface, mineral, and infrastructure mapping databases for every project.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2010s</div>
+        <h3>National Operations — 27 States</h3>
+        <p>APS completes 2D, 3D, 4D, and micro-seismic projects across 27 states, from the Gulf Coast to the Northern Rockies. Right of way acquisition and title curative services are fully integrated into the service offering.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">Today</div>
+        <h3>The Standard Continues</h3>
+        <p>With 45 years of field experience behind us and a focused, expert team, APS continues to deliver the timeliness, accountability, and cost-effectiveness that has defined us since 1980.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-logo-mark">APS</span>
+        <div class="nav-logo-text" style="max-width:none;">AllState Permit Services</div>
+        <p>Setting the standard in permit acquisition services for the oil and gas industry since 1980.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="seismic.html">Seismic Permitting</a></li>
+          <li><a href="row.html">Right of Way</a></li>
+          <li><a href="gis.html">GIS Services</a></li>
+          <li><a href="title.html">Title Curative</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Company History</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="careers.html">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p>303-903-5873</p>
+        <p>PO Box 1, Lewiston, UT 84320</p>
+        <p style="margin-top:8px;"><a href="contact.html" style="color:var(--gold);">Send a Message →</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 AllState Permit Services. All rights reserved.</p>
+      <p>Established 1980 · Operating Nationwide</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
