@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | AllState Permit Services</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .page-hero {
+      position: relative;
+      height: 46vh;
+      min-height: 340px;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 48px 64px;
+      overflow: hidden;
+    }
+    .page-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #0d1b2a 0%, #162d42 60%, #0d1b2a 100%);
+      background-size: cover;
+      background-position: center 50%;
+    }
+    .page-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,27,42,0.97) 0%, rgba(13,27,42,0.5) 100%);
+    }
+    .page-hero-content { position: relative; z-index: 2; }
+
+    .contact-section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 100px 40px;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact-info h2 { margin-bottom: 24px; }
+    .contact-detail {
+      margin-bottom: 32px;
+    }
+    .contact-detail .label { margin-bottom: 6px; }
+    .contact-detail p { font-size: 1rem; line-height: 1.7; }
+
+    .contact-form {
+      background: var(--navy-mid);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-top: 3px solid var(--gold);
+      padding: 48px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+    .form-group label {
+      display: block;
+      font-family: var(--font-label);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray-light);
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.2);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      padding: 14px 16px;
+      outline: none;
+      transition: border-color 0.25s ease;
+      appearance: none;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--gray); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    @media (max-width: 900px) {
+      .contact-section { grid-template-columns: 1fr; gap: 48px; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="../index.html" class="nav-logo">
+      <span class="nav-logo-mark">APS</span>
+      <div class="nav-logo-divider"></div>
+      <span class="nav-logo-text">AllState Permit Services</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="about.html">About Us</a>
+        <ul class="nav-dropdown">
+          <li><a href="about.html">Company History</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="services.html">Services</a>
+        <ul class="nav-dropdown">
+          <li><a href="seismic.html">Seismic Permitting</a></li>
+          <li><a href="row.html">Right of Way Acquisition</a></li>
+          <li><a href="gis.html">GIS Services</a></li>
+          <li><a href="title.html">Title Curative</a></li>
+          <li><a href="landowner.html">Landowner Information</a></li>
+        </ul>
+      </li>
+      <li><a href="careers.html">Join Our Team</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="label" style="margin-bottom:12px;">Get in Touch</p>
+      <h1 style="font-size:clamp(2.5rem,6vw,5rem);">Contact <em>APS</em></h1>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-info reveal">
+      <div class="gold-rule"></div>
+      <p class="label">Reach Our Team</p>
+      <h2 style="margin-bottom:32px;">We Respond <em>Promptly</em></h2>
+
+      <div class="contact-detail">
+        <p class="label">Phone</p>
+        <p><a href="tel:3039035873" style="color:var(--off-white);">303-903-5873</a></p>
+      </div>
+      <div class="contact-detail">
+        <p class="label">Mailing Address</p>
+        <p>PO Box 1<br/>Lewiston, UT 84320</p>
+      </div>
+      <div class="contact-detail">
+        <p class="label">Operations</p>
+        <p>Nationwide — 27 States<br/>Available for projects of all scales</p>
+      </div>
+      <div class="contact-detail">
+        <p class="label">For Landowners</p>
+        <p>If you have received a permit request or have questions about a project on your property, visit our <a href="landowner.html" style="color:var(--gold);">Landowner Information</a> page.</p>
+      </div>
+    </div>
+
+    <div class="contact-form reveal">
+      <p class="label" style="margin-bottom:6px;">Send a Message</p>
+      <h3 style="margin-bottom:32px;">Project Inquiry</h3>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" placeholder="John Smith" required />
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" placeholder="Company Name" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" placeholder="you@company.com" required />
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="(555) 555-5555" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Service Needed</label>
+        <select>
+          <option value="" disabled selected>Select a service...</option>
+          <option>Seismic Permitting</option>
+          <option>Right of Way Acquisition</option>
+          <option>GIS Services</option>
+          <option>Title Curative</option>
+          <option>Multiple / Not Sure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Project Details / Message *</label>
+        <textarea placeholder="Tell us about your project — geography, scope, timeline, and anything else that's relevant..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="width:100%;cursor:pointer;border:none;font-size:0.75rem;">Send Inquiry →</button>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-logo-mark">APS</span>
+        <div class="nav-logo-text" style="max-width:none;">AllState Permit Services</div>
+        <p>Setting the standard in permit acquisition services for the oil and gas industry since 1980.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="seismic.html">Seismic Permitting</a></li>
+          <li><a href="row.html">Right of Way</a></li>
+          <li><a href="gis.html">GIS Services</a></li>
+          <li><a href="title.html">Title Curative</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Company History</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="careers.html">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p>303-903-5873</p>
+        <p>PO Box 1, Lewiston, UT 84320</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 AllState Permit Services. All rights reserved.</p>
+      <p>Established 1980 · Operating Nationwide</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
