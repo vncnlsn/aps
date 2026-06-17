@@ -112,10 +112,9 @@ ul { list-style: none; }
 }
 
 .nav-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: flex-start;
-  gap: 2.5rem;
   height: 100%;
   max-width: var(--max-w);
   margin-inline: auto;
@@ -123,7 +122,12 @@ ul { list-style: none; }
 }
 
 /* Logo — always visible, white-inverted so it reads on both transparent and navy */
-.nav-logo { display: flex; align-items: center; flex-shrink: 0; }
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  flex-shrink: 0;
+}
 
 .logo-img {
   height: 56px;
@@ -135,7 +139,9 @@ ul { list-style: none; }
 .nav-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2.25rem;
+  justify-self: center;
 }
 
 .nav-links a {
@@ -146,7 +152,10 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.85);
   transition: color var(--transition);
 }
-.nav-links a:hover { color: var(--white); }
+
+.nav-links a:hover {
+  color: var(--white);
+}
 
 /* Request Consultation button */
 .btn-nav-cta {
@@ -163,6 +172,7 @@ ul { list-style: none; }
   text-transform: uppercase;
   transition: background var(--transition), border-color var(--transition);
 }
+
 .btn-nav-cta:hover {
   background: rgba(255,255,255,0.12);
   border-color: rgba(255,255,255,0.7);
@@ -171,6 +181,7 @@ ul { list-style: none; }
 /* Mobile toggle */
 .nav-toggle {
   display: none;
+  justify-self: end;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
@@ -179,6 +190,7 @@ ul { list-style: none; }
   cursor: pointer;
   padding: 4px;
 }
+
 .nav-toggle span {
   display: block;
   width: 22px;
@@ -192,8 +204,8 @@ ul { list-style: none; }
 .hero {
   position: relative;
   width: 100%;
-  height: 62vh;
-  min-height: 380px;
+  height: 80vh;
+  min-height: 680px;
   overflow: hidden;
   background: var(--navy-dark);
 }
@@ -224,26 +236,28 @@ ul { list-style: none; }
    ═════════════════════════════════════════ */
 .mission {
   background: var(--white);
-  padding-top: clamp(2rem, 4vw, 3.5rem);
-  padding-bottom: 12vh;
+  padding-top: 2.25rem;
+  padding-bottom: 4rem;
   text-align: center;
 }
 
 .container-mission {
   width: 100%;
-  max-width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
   padding-inline: clamp(1.5rem, 4vw, 4rem);
 }
 
 .mission-statement {
   font-family: var(--font-display);
-  font-size: 1.7vw;
+  font-size: clamp(1.8rem, 2.7vw, 3rem);
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.15;
   color: var(--navy);
   letter-spacing: -0.01em;
-  white-space: nowrap;
-  margin-bottom: 1.5rem;
+  white-space: normal;
+  max-width: 1400px;
+  margin-inline: auto 1.25rem;
   text-align: center;
 }
 
